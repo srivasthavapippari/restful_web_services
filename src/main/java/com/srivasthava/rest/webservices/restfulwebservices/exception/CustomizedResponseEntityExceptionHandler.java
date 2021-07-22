@@ -39,7 +39,7 @@ extends ResponseEntityExceptionHandler {
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(
 			MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
-		ExceptionHandler exceptionResponse = new ExceptionHandler(new Date(), ex.getMessage(),
+		ExceptionHandler exceptionResponse = new ExceptionHandler(new Date(), "Validation failed",
 				ex.getBindingResult().toString());
 		return new ResponseEntity<>(exceptionResponse, HttpStatus.BAD_REQUEST);
 	}
