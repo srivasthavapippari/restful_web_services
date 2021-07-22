@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class ExceptionHandler {
 	// timestamp when exception happened
+	// this is the exception response we gonna send when an exception occurs..
 	private Date timestamp;
 	
 	// message
