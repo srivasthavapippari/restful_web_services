@@ -39,7 +39,16 @@
       		<artifactId>springdoc-openapi-ui</artifactId>
       		<version>1.5.9</version>
    		</dependency>
-		
+   		<!-- Monitoring apis with actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- HAL EXPLORER provides visualisation of the apis -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-explorer</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
